@@ -9,7 +9,7 @@ public class ProductService {
         System.out.print("Enter Product Name:");
         String productName = sc.next();
         System.out.print("Enter Product Price:");
-        int productPrice = sc.nextInt();
+        Double productPrice = sc.nextDouble();
         if (productName.equals(null)) {
             System.out.println("Invalid product name");
             return;
@@ -67,7 +67,7 @@ public class ProductService {
             return;
         }
         System.out.print("Enter Product Price:");
-        int productPrice = sc.nextInt();
+        Double productPrice = sc.nextDouble();
         productArray.get(index).setPrice(productPrice);
         System.out.println("You successfully updated a product. Now enter the new choice.");
         return;
@@ -78,7 +78,7 @@ public class ProductService {
         System.out.println("Product Name \t Product Price\n");
         System.out.println("--------------------------");
         for (ProductDao product : productArray) {
-            System.out.println(product.getProductName() + "\t" + product.getProductPrice());
+            System.out.println(product.getProductName() + "\t\t  Rs." + product.getProductPrice());
         }
         return;
     }

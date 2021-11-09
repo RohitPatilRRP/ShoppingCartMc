@@ -1,13 +1,13 @@
 public class ProductDao {
 
     private String productName;
-    private int productPrice;
+    private Double productPrice;
 
     public void setName(String productName) {
         this.productName = productName;
     }
 
-    public void setPrice(int productPrice) {
+    public void setPrice(Double productPrice) {
         this.productPrice = productPrice;
     }
 
@@ -15,7 +15,7 @@ public class ProductDao {
         return this.productName;
     }
 
-    public int getProductPrice() {
+    public Double getProductPrice() {
         return this.productPrice;
     }
 }
