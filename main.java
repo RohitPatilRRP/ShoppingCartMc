@@ -37,7 +37,7 @@ class Cart {
                 System.exit(0);
             break;
         default:
-            System.out.println("Please select valid an option");
+            System.out.println("Please select a valid option");
             printOptions();
         }
     }
