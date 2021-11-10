@@ -4,13 +4,9 @@ class Cart {
 
     static boolean isRunning = true;
 
-    public static void printOptions() {
-        System.out.println(
-                "\nEnter your choice\n1. Add Product \n2. Remove Product\n3 Update Product\n4 View Product\n5 Exit\nYour choice: ");
-    }
-
     public static void Run(Scanner sc, ProductService ps) {
-        printOptions();
+        System.out.print(
+                "\nEnter your choice\n1. Add Product \n2. Remove Product\n3 Update Product\n4 View Product\n5 Exit\nYour choice: ");
         int choice = sc.nextInt();
         switch (choice) {
         case 1:
@@ -37,8 +33,7 @@ class Cart {
                 System.exit(0);
             break;
         default:
-            System.out.println("Please select a valid option");
-            printOptions();
+            System.out.println("Please select a valid option!");
         }
     }
 
